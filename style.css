@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+
+.container{
+    height: 95vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#111e, #eee5);
+    display: flex;
+}
+.clock-wrapper{
+    
+}
+
+.circle{
+    position: relative;
+    background-image:url("https://pixy.org/src/69/thumbs350/692100.jpg");
+    background-size: 25em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 20em;
+    width: 20em;
+    border: 2px solid white;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 50%;
+    padding: 2em;
+}
+.hand{
+    position: absolute;
+    height: 5px;
+    width: 10em;
+    background-color: black;
+    transform-origin: 100%;
+    transition: all 0.5s;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0, 1.01, 0.48, 1.08);
+    
+}
+
+.dot{
+    width: 1em;
+    height: 1em;
+    background-color: blue;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    z-index: 1;
+}
+#hand-min{
+}
+#hand-sec{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#hand-sec small{
+    animation: animate 1s infinite ease-in ;
+    background-color: white;
+    padding: 5px;
+    position: relative;
+    
+}
+#hand-hour{
+   
+}
+.digital-clock{
+    color: white;
+    height: 5em ;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+h4{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+@keyframes animate {
+    0%{opacity: 0%,; color: purple; }
+    100%{opacity: 100%;}
+    
+}
+
